@@ -1,0 +1,23 @@
+{
+	"authors": [
+		"Andrea Fontana"
+	],
+	"copyright": "Copyright © 2026, Andrea Fontana",
+	"description": "OpenRouter API library for D",
+	"license": "MIT",
+	"name": "openrouter-d",
+	"targetType": "library",
+	"sourcePaths": ["source"],
+	"configurations": [
+		{
+			"name": "library",
+			"targetType": "library",
+			"excludedSourceFiles": ["source/examples.d"]
+		},
+		{
+			"name": "examples",
+			"targetType": "executable",
+			"mainSourceFile": "source/examples.d"
+		}
+	]
+}
