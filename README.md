@@ -18,14 +18,15 @@ import std.stdio : writeln;
 
 void main()
 {
-    string apiKey = "sk-or-v1-your-api-key-here";
+    string apiKey = "your-sk-or-v1-apikey-here";
+    
     auto or = OpenRouter(apiKey);
-
-    or.addMessage("Tell me a fun fact about space.");
+    or.addMessage("Describe a interesting feature of dlang in a single sentence.");
+    
     auto resp = or.complete();
 
     writeln("Response: ", resp.text);
-    writeln("Cost: $", resp.usage.cost.get);
+    writeln("Model: ", resp.model);
 }
 ```
 
